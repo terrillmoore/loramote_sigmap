@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/Combined/production\LoRaMote.X.production.hex">
+    <memory name="program">
+      <units>bytes</units>
+      <length>28672</length>
+      <used>19473</used>
+      <free>9199</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>2048</length>
+      <used>726</used>
+      <free>1322</free>
+    </memory>
+  </executable>
+</project>

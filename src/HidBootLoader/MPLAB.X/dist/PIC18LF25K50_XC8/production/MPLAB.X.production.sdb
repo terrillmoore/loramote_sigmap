@@ -1,0 +1,975 @@
+[p LITE_MODE AUTOSTATIC IEEE_DBL LFSROK EMI_WORD IEEE_FLT ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18LF25K50 ]
+[d frameptr 4065 ]
+"331 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/BootPIC18NonJ.c
+[v _UserInit UserInit `(v  1 e 1 0 ]
+"357
+[v _ProcessIO ProcessIO `(v  1 e 1 0 ]
+"616
+[v _SignFlash SignFlash `(v  1 e 1 0 ]
+"707
+[v _ResetDeviceCleanly ResetDeviceCleanly `(v  1 e 1 0 ]
+"720
+[v _WriteFlashBlock WriteFlashBlock `(v  1 e 1 0 ]
+"832
+[v _WriteConfigBits WriteConfigBits `(v  1 e 1 0 ]
+"869
+[v _WriteEEPROM WriteEEPROM `(v  1 e 1 0 ]
+"891
+[v _UnlockAndActivate UnlockAndActivate `(v  1 e 1 0 ]
+"325 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/main.c
+[v _main main `(v  1 e 1 0 ]
+"354
+[v _DoSignatureCheck DoSignatureCheck `(v  1 e 1 0 ]
+"397
+[v _BootMain BootMain `(v  1 e 1 @48 ]
+"447
+[v _InitializeSystem InitializeSystem `(v  1 e 1 0 ]
+"488
+[v _BlinkUSBStatus BlinkUSBStatus `(v  1 e 1 0 ]
+"562
+[v _USBCBWakeFromSuspend USBCBWakeFromSuspend `(v  1 e 1 0 ]
+"596
+[v _USBCBSuspend USBCBSuspend `(v  1 e 1 0 ]
+"642
+[v _USBCBInitEP USBCBInitEP `(v  1 e 1 0 ]
+"691
+[v _USBCBCheckOtherReq USBCBCheckOtherReq `(v  1 e 1 0 ]
+"326 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/usb_device.c
+[v _USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+"354
+[v _USBSoftAttach USBSoftAttach `(v  1 e 1 0 ]
+"406
+[v _USBCheckBusStatus USBCheckBusStatus `(v  1 e 1 0 ]
+"472
+[v _USBDeviceTasks USBDeviceTasks `(v  1 e 1 0 ]
+"618
+[v _USBSuspend USBSuspend `(v  1 e 1 0 ]
+"710
+[v _USBWakeFromSuspend USBWakeFromSuspend `(v  1 e 1 0 ]
+"753
+[v _USBProtocolResetHandler USBProtocolResetHandler `(v  1 e 1 0 ]
+"821
+[v _USBCtrlTrfSetupHandler USBCtrlTrfSetupHandler `(v  1 e 1 0 ]
+"1024
+[v _USBCtrlTrfInHandler USBCtrlTrfInHandler `(v  1 e 1 0 ]
+"1094
+[v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 e 1 0 ]
+"1178
+[v _USBCtrlEPServiceComplete USBCtrlEPServiceComplete `(v  1 e 1 0 ]
+"1325
+[v _USBCheckStdRequest USBCheckStdRequest `(v  1 e 1 0 ]
+"1392
+[v _USBStdGetDscHandler USBStdGetDscHandler `(v  1 e 1 0 ]
+"1440
+[v _USBStdSetCfgHandler USBStdSetCfgHandler `(v  1 e 1 0 ]
+"1489
+[v _USBStdGetStatusHandler USBStdGetStatusHandler `(v  1 e 1 0 ]
+"1547
+[v _USBStdFeatureReqHandler USBStdFeatureReqHandler `(v  1 e 1 0 ]
+"1592
+[v _LoadBDTandSetUOWN LoadBDTandSetUOWN `(v  1 e 1 0 ]
+"1624
+[v _USBDisableWithLongDelay USBDisableWithLongDelay `(v  1 e 1 0 ]
+"1634
+[v _DelayRoutine DelayRoutine `(v  1 e 1 0 ]
+"1651
+[v _ClearWatchdog ClearWatchdog `(v  1 e 1 0 ]
+"73 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/usb_device_hid.c
+[v _USBCheckHIDRequest USBCheckHIDRequest `(v  1 e 1 0 ]
+"139
+[v _HIDGetReportHandler HIDGetReportHandler `(v  1 e 1 0 ]
+"144
+[v _HIDSetReportHandler HIDSetReportHandler `(v  1 e 1 0 ]
+"171
+[v _HIDInitEP HIDInitEP `(v  1 e 1 0 ]
+"229
+[v _HIDTxReport HIDTxReport `(v  1 e 1 0 ]
+"284
+[v _HIDRxReport HIDRxReport `(uc  1 e 1 0 ]
+"62 /opt/microchip/xc8/v1.36/sources/common/float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 /opt/microchip/xc8/v1.36/sources/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 /opt/microchip/xc8/v1.36/sources/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 /opt/microchip/xc8/v1.36/sources/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"20 /opt/microchip/xc8/v1.36/sources/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 /opt/microchip/xc8/v1.36/sources/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 /opt/microchip/xc8/v1.36/sources/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 /opt/microchip/xc8/v1.36/sources/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 /opt/microchip/xc8/v1.36/sources/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+[s S21 . 64 `uc 1 Command 1 0 `ul 1 Address 4 1 `uc 1 Size 1 5 `[58]uc 1 Data 58 6 ]
+"299 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/BootPIC18NonJ.c
+[s S26 . 65 `uc 1 Command 1 0 `uc 1 PacketDataFieldSize 1 1 `uc 1 BytesPerAddress 1 2 `uc 1 Type1 1 3 `ul 1 Address1 4 4 `ul 1 Length1 4 8 `uc 1 Type2 1 12 `ul 1 Address2 4 13 `ul 1 Length2 4 17 `uc 1 Type3 1 21 `ul 1 Address3 4 22 `ul 1 Length3 4 26 `uc 1 Type4 1 30 `ul 1 Address4 4 31 `ul 1 Length4 4 35 `uc 1 Type5 1 39 `ul 1 Address5 4 40 `ul 1 Length5 4 44 `uc 1 Type6 1 48 `ul 1 Address6 4 49 `ul 1 Length6 4 53 `uc 1 VersionFlag 1 57 `[7]uc 1 ExtraPadBytes 7 58 ]
+[s S50 . 2 `uc 1 Command 1 0 `uc 1 LockValue 1 1 ]
+[s S53 . 29 `uc 1 Command 1 0 `ui 1 BootloaderVersion 2 1 `ui 1 ApplicationVersion 2 3 `ul 1 SignatureAddress 4 5 `ui 1 SignatureValue 2 9 `ul 1 ErasePageSize 4 11 `uc 1 Config1LMask 1 15 `uc 1 Config1HMask 1 16 `uc 1 Config2LMask 1 17 `uc 1 Config2HMask 1 18 `uc 1 Config3LMask 1 19 `uc 1 Config3HMask 1 20 `uc 1 Config4LMask 1 21 `uc 1 Config4HMask 1 22 `uc 1 Config5LMask 1 23 `uc 1 Config5HMask 1 24 `uc 1 Config6LMask 1 25 `uc 1 Config6HMask 1 26 `uc 1 Config7LMask 1 27 `uc 1 Config7HMask 1 28 ]
+[u S74 . 65 `[64]uc 1 Contents 64 0 `S21 1 . 64 0 `S26 1 . 65 0 `S50 1 . 2 0 `S53 1 . 29 0 ]
+[v _PacketFromPC PacketFromPC `S74  1 e 65 0 ]
+"303
+[v _PacketToPC PacketToPC `S74  1 e 65 0 ]
+"307
+[v _ProgrammingBuffer ProgrammingBuffer `[64]uc  1 e 64 0 ]
+"311
+[v _BootState BootState `uc  1 e 1 0 ]
+"312
+[v _ErasePageTracker ErasePageTracker `ui  1 e 2 0 ]
+"313
+[v _BufferedDataIndex BufferedDataIndex `uc  1 e 1 0 ]
+"314
+[v _ProgrammedPointer ProgrammedPointer `ul  1 e 4 0 ]
+"315
+[v _ConfigsLockValue ConfigsLockValue `uc  1 e 1 0 ]
+"273 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/main.c
+[v _FlashSignatureWord FlashSignatureWord `Cui  1 e 2 @4102 ]
+[s S1056 _USB_DEV_DSC 18 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `ui 1 bcdUSB 2 2 `uc 1 bDevCls 1 4 `uc 1 bDevSubCls 1 5 `uc 1 bDevProtocol 1 6 `uc 1 bMaxPktSize0 1 7 `ui 1 idVendor 2 8 `ui 1 idProduct 2 10 `ui 1 bcdDevice 2 12 `uc 1 iMFR 1 14 `uc 1 iProduct 1 15 `uc 1 iSerialNum 1 16 `uc 1 bNumCfg 1 17 ]
+"172 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/usb_descriptors.c
+[v _device_dsc device_dsc `CS1056  1 e 18 0 ]
+"191
+[v _CFG01 CFG01 `C[41]uc  1 e 41 0 ]
+[s S1107 . 4 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[1]ui 1 string 2 2 ]
+"244
+[v _sd000 sd000 `CS1107  1 e 4 0 ]
+[s S1111 . 52 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[25]ui 1 string 50 2 ]
+"247
+[v _sd001 sd001 `CS1111  1 e 52 0 ]
+[s S1115 . 38 `uc 1 bLength 1 0 `uc 1 bDscType 1 1 `[18]ui 1 string 36 2 ]
+"252
+[v _sd002 sd002 `CS1115  1 e 38 0 ]
+"257
+[v _hid_rpt01 hid_rpt01 `C[29]uc  1 e 29 0 ]
+"280
+[v _USB_SD_Ptr USB_SD_Ptr `C[3]*.25Cuc  1 e 6 0 ]
+"80 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/usb_device.c
+[v _bTRNIFCount bTRNIFCount `uc  1 e 1 0 ]
+"81
+[v _ctrl_trf_state ctrl_trf_state `uc  1 e 1 0 ]
+"82
+[v _ctrl_trf_session_owner ctrl_trf_session_owner `uc  1 e 1 0 ]
+[s S1153 . 2 `uc 1 bLow 1 0 `uc 1 bHigh 1 1 ]
+"83
+[u S1156 _POINTER 3 `S1153 1 . 2 0 `ui 1 _word 2 0 `*.2uc 1 bRam 3 0 `*.2ui 1 wRam 3 0 `*.2Cuc 1 bRom 3 0 `*.2Cus 1 wRom 3 0 ]
+[v _pSrc pSrc `S1156  1 e 3 0 ]
+"84
+[v _pDst pDst `S1156  1 e 3 0 ]
+[s S1163 . 2 `uc 1 LB 1 0 `uc 1 HB 1 1 ]
+"85
+[s S1166 . 2 `uc 1 b0 1 0 :1:0 
+`uc 1 b1 1 0 :1:1 
+`uc 1 b2 1 0 :1:2 
+`uc 1 b3 1 0 :1:3 
+`uc 1 b4 1 0 :1:4 
+`uc 1 b5 1 0 :1:5 
+`uc 1 b6 1 0 :1:6 
+`uc 1 b7 1 0 :1:7 
+`uc 1 b8 1 1 :1:0 
+`uc 1 b9 1 1 :1:1 
+`uc 1 b10 1 1 :1:2 
+`uc 1 b11 1 1 :1:3 
+`uc 1 b12 1 1 :1:4 
+`uc 1 b13 1 1 :1:5 
+`uc 1 b14 1 1 :1:6 
+`uc 1 b15 1 1 :1:7 
+]
+[u S1183 . 2 `us 1 Val 2 0 `[2]uc 1 v 2 0 `S1163 1 byte 2 0 `S1166 1 bits 2 0 ]
+[v _wCount wCount `S1183  1 e 2 0 ]
+"86
+[v _short_pkt_status short_pkt_status `uc  1 e 1 0 ]
+[s S1188 . 8 `[8]uc 1 _byte 8 0 ]
+"87
+[s S1190 . 8 `uc 1 bmRequestType 1 0 `uc 1 bRequest 1 1 `ui 1 wValue 2 2 `ui 1 wIndex 2 4 `ui 1 wLength 2 6 ]
+[s S1196 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`S1183 1 W_Value 2 2 `S1183 1 W_Index 2 4 `S1183 1 W_Length 2 6 ]
+[s S1202 . 8 `uc 1 Recipient 1 0 :5:0 
+`uc 1 RequestType 1 0 :2:5 
+`uc 1 DataDir 1 0 :1:7 
+`uc 1 . 1 1 :8:0 
+`uc 1 bFeature 1 2 `uc 1 . 1 3 :8:0 
+`uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S1213 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bDscIndex 1 2 `uc 1 bDscType 1 3 `ui 1 wLangID 2 4 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S1221 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bDevADR 1 2 `uc 1 bDevADRH 1 3 `uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S1230 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bCfgValue 1 2 `uc 1 bCfgRSD 1 3 `uc 1 . 1 4 :8:0 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S1239 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 bAltID 1 2 `uc 1 bAltID_H 1 3 `uc 1 bIntfID 1 4 `uc 1 bIntfID_H 1 5 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S1248 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 . 1 2 :8:0 
+`uc 1 . 1 3 :8:0 
+`uc 1 bEPID 1 4 `uc 1 bEPID_H 1 5 `uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[s S1257 . 8 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`uc 1 . 1 2 :8:0 
+`uc 1 . 1 3 :8:0 
+`uc 1 EPNum 1 4 :4:0 
+`uc 1 . 1 4 :3:4 
+`uc 1 EPDir 1 4 :1:7 
+`uc 1 . 1 5 :8:0 
+`uc 1 . 1 6 :8:0 
+`uc 1 . 1 7 :8:0 
+]
+[u S1268 _CTRL_TRF_SETUP 8 `S1188 1 . 8 0 `S1190 1 . 8 0 `S1196 1 . 8 0 `S1202 1 . 8 0 `S1213 1 . 8 0 `S1221 1 . 8 0 `S1230 1 . 8 0 `S1239 1 . 8 0 `S1248 1 . 8 0 `S1257 1 . 8 0 ]
+[v _SetupPkt SetupPkt `S1268  1 e 8 0 ]
+"88
+[v _EP0OutOddNeedsArmingNext EP0OutOddNeedsArmingNext `uc  1 e 1 0 ]
+[s S100 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"89
+[s S109 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :2:6 
+]
+[s S116 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S120 _BD_STAT 1 `uc 1 _byte 1 0 `S100 1 . 1 0 `S109 1 . 1 0 `S116 1 . 1 0 ]
+[s S125 . 4 `S120 1 Stat 1 0 `uc 1 Cnt 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S130 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`*.39uc 1 ADR 2 2 ]
+[u S134 _BDT 4 `S125 1 . 4 0 `S130 1 . 4 0 ]
+[v _TempBDT TempBDT `S134  1 e 4 0 ]
+"90
+[v _usb_device_state usb_device_state `uc  1 e 1 0 ]
+[s S1316 . 1 `uc 1 RemoteWakeup 1 0 :1:0 
+`uc 1 ctrl_trf_mem 1 0 :1:1 
+]
+"91
+[u S1319 _USB_DEVICE_STATUS 1 `uc 1 _byte 1 0 `S1316 1 . 1 0 ]
+[v _usb_stat usb_stat `S1319  1 e 1 0 ]
+"92
+[v _usb_active_cfg usb_active_cfg `uc  1 e 1 0 ]
+"93
+[v _usb_alt_intf usb_alt_intf `[1]uc  1 e 1 0 ]
+"99
+[v _USTATSave USTATSave `uc  1 e 1 0 ]
+"101
+[v _DeviceIsSoftDetached DeviceIsSoftDetached `uc  1 e 1 0 ]
+"170
+[v _ep0BoEven ep0BoEven `VES134  1 e 4 @1024 ]
+"171
+[v _ep0BoOdd ep0BoOdd `VES134  1 e 4 @1028 ]
+"172
+[v _ep0Bi ep0Bi `VES134  1 e 4 @1032 ]
+"176
+[v _ep1Bo ep1Bo `VES134  1 e 4 @1036 ]
+"177
+[v _ep1Bi ep1Bi `VES134  1 e 4 @1040 ]
+"254
+[v _EP0OutEvenBuf EP0OutEvenBuf `VE[8]uc  1 e 8 @1044 ]
+"255
+[v _EP0OutOddBuf EP0OutOddBuf `VE[8]uc  1 e 8 @1052 ]
+"256
+[s S1324 . 8 `uc 1 _byte0 1 0 `uc 1 _byte1 1 1 `uc 1 _byte2 1 2 `uc 1 _byte3 1 3 `uc 1 _byte4 1 4 `uc 1 _byte5 1 5 `uc 1 _byte6 1 6 `uc 1 _byte7 1 7 ]
+[s S1333 . 8 `ui 1 _word0 2 0 `ui 1 _word1 2 2 `ui 1 _word2 2 4 `ui 1 _word3 2 6 ]
+[u S1338 _CTRL_TRF_DATA 8 `S1188 1 . 8 0 `S1324 1 . 8 0 `S1333 1 . 8 0 ]
+[v _CtrlTrfData CtrlTrfData `VES1338  1 e 8 @1060 ]
+"263
+[v _hid_report_out hid_report_out `VE[64]uc  1 e 64 @1068 ]
+"264
+[v _hid_report_in hid_report_in `VE[64]uc  1 e 64 @1132 ]
+"43 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/usb_device_hid.c
+[v _idle_rate idle_rate `uc  1 e 1 0 ]
+"44
+[v _active_protocol active_protocol `uc  1 e 1 0 ]
+"45
+[v _hid_rpt_rx_len hid_rpt_rx_len `uc  1 e 1 0 ]
+"332 /opt/microchip/xc8/v1.36/include/pic18lf25k50.h
+[v _UCON UCON `VEuc  1 e 1 @3936 ]
+[s S81 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 SUSPND 1 0 :1:1 
+`uc 1 RESUME 1 0 :1:2 
+`uc 1 USBEN 1 0 :1:3 
+`uc 1 PKTDIS 1 0 :1:4 
+`uc 1 SE0 1 0 :1:5 
+`uc 1 PPBRST 1 0 :1:6 
+]
+"348
+[u S89 . 1 `S81 1 . 1 0 ]
+[v _UCONbits UCONbits `VES89  1 e 1 @3936 ]
+"382
+[v _USTAT USTAT `VEuc  1 e 1 @3937 ]
+[s S1393 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PPBI 1 0 :1:1 
+`uc 1 DIR 1 0 :1:2 
+`uc 1 ENDP 1 0 :4:3 
+]
+"402
+[s S1398 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ENDP0 1 0 :1:3 
+`uc 1 ENDP1 1 0 :1:4 
+`uc 1 ENDP2 1 0 :1:5 
+`uc 1 ENDP3 1 0 :1:6 
+]
+[u S1404 . 1 `S1393 1 . 1 0 `S1398 1 . 1 0 ]
+[v _USTATbits USTATbits `VES1404  1 e 1 @3937 ]
+"441
+[v _UCFG UCFG `VEuc  1 e 1 @3938 ]
+"522
+[v _UADDR UADDR `VEuc  1 e 1 @3939 ]
+"585
+[v _UIE UIE `VEuc  1 e 1 @3940 ]
+[s S1487 . 1 `uc 1 URSTIE 1 0 :1:0 
+`uc 1 UERRIE 1 0 :1:1 
+`uc 1 ACTVIE 1 0 :1:2 
+`uc 1 TRNIE 1 0 :1:3 
+`uc 1 IDLEIE 1 0 :1:4 
+`uc 1 STALLIE 1 0 :1:5 
+`uc 1 SOFIE 1 0 :1:6 
+]
+"601
+[u S1495 . 1 `S1487 1 . 1 0 ]
+[v _UIEbits UIEbits `VES1495  1 e 1 @3940 ]
+"640
+[v _UIR UIR `VEuc  1 e 1 @3941 ]
+[s S1365 . 1 `uc 1 URSTIF 1 0 :1:0 
+`uc 1 UERRIF 1 0 :1:1 
+`uc 1 ACTVIF 1 0 :1:2 
+`uc 1 TRNIF 1 0 :1:3 
+`uc 1 IDLEIF 1 0 :1:4 
+`uc 1 STALLIF 1 0 :1:5 
+`uc 1 SOFIF 1 0 :1:6 
+]
+"656
+[u S1373 . 1 `S1365 1 . 1 0 ]
+[v _UIRbits UIRbits `VES1373  1 e 1 @3941 ]
+"695
+[v _UEIE UEIE `VEuc  1 e 1 @3942 ]
+"917
+[v _UEP0 UEP0 `VEuc  1 e 1 @3946 ]
+"1048
+[v _UEP1 UEP1 `VEuc  1 e 1 @3947 ]
+"1179
+[v _UEP2 UEP2 `VEuc  1 e 1 @3948 ]
+"1310
+[v _UEP3 UEP3 `VEuc  1 e 1 @3949 ]
+"1441
+[v _UEP4 UEP4 `VEuc  1 e 1 @3950 ]
+"1572
+[v _UEP5 UEP5 `VEuc  1 e 1 @3951 ]
+"1703
+[v _UEP6 UEP6 `VEuc  1 e 1 @3952 ]
+"1834
+[v _UEP7 UEP7 `VEuc  1 e 1 @3953 ]
+[s S653 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"3334
+[s S662 . 1 `uc 1 T1OSO 1 0 :1:0 
+`uc 1 T1OSI 1 0 :1:1 
+`uc 1 CCP1 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TX 1 0 :1:6 
+`uc 1 RX 1 0 :1:7 
+]
+[s S669 . 1 `uc 1 T13CKI 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 P1A 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 CK 1 0 :1:6 
+`uc 1 DT 1 0 :1:7 
+]
+[s S676 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+]
+[s S679 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PA1 1 0 :1:2 
+]
+[s S682 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+]
+[u S685 . 1 `S653 1 . 1 0 `S662 1 . 1 0 `S669 1 . 1 0 `S676 1 . 1 0 `S679 1 . 1 0 `S682 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES685  1 e 1 @3970 ]
+[s S812 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"3749
+[s S821 . 1 `uc 1 LA0 1 0 :1:0 
+]
+[s S823 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 LA1 1 0 :1:1 
+]
+[s S826 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 LA2 1 0 :1:2 
+]
+[s S829 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 LA3 1 0 :1:3 
+]
+[s S832 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LA4 1 0 :1:4 
+]
+[s S835 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LA5 1 0 :1:5 
+]
+[s S838 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 LA6 1 0 :1:6 
+]
+[s S841 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 LA7 1 0 :1:7 
+]
+[u S844 . 1 `S812 1 . 1 0 `S821 1 . 1 0 `S823 1 . 1 0 `S826 1 . 1 0 `S829 1 . 1 0 `S832 1 . 1 0 `S835 1 . 1 0 `S838 1 . 1 0 `S841 1 . 1 0 ]
+[v _LATAbits LATAbits `VES844  1 e 1 @3977 ]
+[s S772 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"4467
+[s S781 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+[u S790 . 1 `S772 1 . 1 0 `S781 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES790  1 e 1 @3986 ]
+[s S617 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"4907
+[s S626 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S633 . 1 `S617 1 . 1 0 `S626 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES633  1 e 1 @3988 ]
+"5514
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @3995 ]
+[s S1439 . 1 `uc 1 TMR1GIE 1 0 :1:0 
+`uc 1 TMR3GIE 1 0 :1:1 
+`uc 1 USBIE 1 0 :1:2 
+`uc 1 CTMUIE 1 0 :1:3 
+]
+"6272
+[s S1444 . 1 `uc 1 RXB0IE 1 0 :1:0 
+]
+[s S1446 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXB1IE 1 0 :1:1 
+]
+[s S1449 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIE 1 0 :1:1 
+]
+[s S1452 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TXB0IE 1 0 :1:2 
+]
+[s S1455 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 TXB1IE 1 0 :1:3 
+]
+[u S1458 . 1 `S1439 1 . 1 0 `S1444 1 . 1 0 `S1446 1 . 1 0 `S1449 1 . 1 0 `S1452 1 . 1 0 `S1455 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES1458  1 e 1 @4003 ]
+[s S897 . 1 `uc 1 TMR1GIF 1 0 :1:0 
+`uc 1 TMR3GIF 1 0 :1:1 
+`uc 1 USBIF 1 0 :1:2 
+`uc 1 CTMUIF 1 0 :1:3 
+]
+"6338
+[s S902 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RXBNIF 1 0 :1:1 
+]
+[u S905 . 1 `S897 1 . 1 0 `S902 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES905  1 e 1 @4004 ]
+"6413
+[v _EECON1 EECON1 `VEuc  1 e 1 @4006 ]
+[s S242 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"6434
+[s S251 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 EEFS 1 0 :1:6 
+]
+[u S254 . 1 `S242 1 . 1 0 `S251 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES254  1 e 1 @4006 ]
+"6478
+[v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
+"6497
+[v _EEDATA EEDATA `VEuc  1 e 1 @4008 ]
+"6503
+[v _EEADR EEADR `VEuc  1 e 1 @4009 ]
+"7667
+[v _ACTCON ACTCON `VEuc  1 e 1 @4021 ]
+[s S917 . 1 `uc 1 NOT_BOR 1 0 :1:0 
+]
+"11956
+[s S919 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_POR 1 0 :1:1 
+]
+[s S922 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_PD 1 0 :1:2 
+]
+[s S925 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_TO 1 0 :1:3 
+]
+[s S928 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 NOT_RI 1 0 :1:4 
+]
+[s S931 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nPD 1 0 :1:2 
+`uc 1 nTO 1 0 :1:3 
+`uc 1 nRI 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SBOREN 1 0 :1:6 
+`uc 1 IPEN 1 0 :1:7 
+]
+[s S940 . 1 `uc 1 BOR 1 0 :1:0 
+`uc 1 POR 1 0 :1:1 
+`uc 1 PD 1 0 :1:2 
+`uc 1 TO 1 0 :1:3 
+`uc 1 RI 1 0 :1:4 
+]
+[u S946 . 1 `S917 1 . 1 0 `S919 1 . 1 0 `S922 1 . 1 0 `S925 1 . 1 0 `S928 1 . 1 0 `S931 1 . 1 0 `S940 1 . 1 0 ]
+[v _RCONbits RCONbits `VES946  1 e 1 @4048 ]
+"12072
+[v _OSCCON2 OSCCON2 `VEuc  1 e 1 @4050 ]
+[s S749 . 1 `uc 1 LFIOFS 1 0 :1:0 
+`uc 1 HFIOFR 1 0 :1:1 
+`uc 1 PRISD 1 0 :1:2 
+`uc 1 SOSCGO 1 0 :1:3 
+`uc 1 PLLEN 1 0 :1:4 
+`uc 1 INTSRC 1 0 :1:5 
+`uc 1 SOSCRUN 1 0 :1:6 
+`uc 1 PLLRDY 1 0 :1:7 
+]
+"12089
+[u S758 . 1 `S749 1 . 1 0 ]
+[v _OSCCON2bits OSCCON2bits `VES758  1 e 1 @4050 ]
+"12133
+[v _OSCCON OSCCON `VEuc  1 e 1 @4051 ]
+"12976
+[v _INTCON INTCON `VEuc  1 e 1 @4082 ]
+[s S287 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"13008
+[s S296 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S305 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S309 . 1 `S287 1 . 1 0 `S296 1 . 1 0 `S305 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES309  1 e 1 @4082 ]
+"13136
+[v _TABLAT TABLAT `VEuc  1 e 1 @4085 ]
+"13163
+[v _TBLPTRL TBLPTRL `VEuc  1 e 1 @4086 ]
+"13182
+[v _TBLPTRH TBLPTRH `VEuc  1 e 1 @4087 ]
+"13201
+[v _TBLPTRU TBLPTRU `VEuc  1 e 1 @4088 ]
+"13266
+[v _STKPTR STKPTR `VEuc  1 e 1 @4092 ]
+"325 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"352
+} 0
+"354
+[v _DoSignatureCheck DoSignatureCheck `(v  1 e 1 0 ]
+{
+"372
+} 0
+"397
+[v _BootMain BootMain `(v  1 e 1 @48 ]
+{
+"425
+} 0
+"357 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/BootPIC18NonJ.c
+[v _ProcessIO ProcessIO `(v  1 e 1 0 ]
+{
+"359
+[v ProcessIO@i i `uc  1 s 1 i ]
+"360
+[v ProcessIO@pROM pROM `*.33Cuc  1 s 3 pROM ]
+"604
+} 0
+"720
+[v _WriteFlashBlock WriteFlashBlock `(v  1 e 1 0 ]
+{
+"722
+[v WriteFlashBlock@i i `uc  1 s 1 i ]
+"723
+[v WriteFlashBlock@BytesTakenFromBuffer BytesTakenFromBuffer `uc  1 s 1 BytesTakenFromBuffer ]
+"724
+[v WriteFlashBlock@CorrectionFactor CorrectionFactor `uc  1 s 1 CorrectionFactor ]
+"727
+[v WriteFlashBlock@pROM pROM `*.33Cuc  1 s 3 pROM ]
+"829
+} 0
+"869
+[v _WriteEEPROM WriteEEPROM `(v  1 e 1 0 ]
+{
+"871
+[v WriteEEPROM@i i `uc  1 s 1 i ]
+"882
+} 0
+"832
+[v _WriteConfigBits WriteConfigBits `(v  1 e 1 0 ]
+{
+"834
+[v WriteConfigBits@i i `uc  1 s 1 i ]
+"866
+} 0
+"472 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/usb_device.c
+[v _USBDeviceTasks USBDeviceTasks `(v  1 e 1 0 ]
+{
+[s S100 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"474
+[s S109 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :2:6 
+]
+[s S116 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S120 _BD_STAT 1 `uc 1 _byte 1 0 `S100 1 . 1 0 `S109 1 . 1 0 `S116 1 . 1 0 ]
+[s S125 . 4 `S120 1 Stat 1 0 `uc 1 Cnt 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S130 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`*.39uc 1 ADR 2 2 ]
+[u S134 _BDT 4 `S125 1 . 4 0 `S130 1 . 4 0 ]
+[v USBDeviceTasks@pBDTEntry pBDTEntry `*.39VES134  1 s 2 pBDTEntry ]
+"475
+[v USBDeviceTasks@i i `uc  1 s 1 i ]
+"593
+} 0
+"710
+[v _USBWakeFromSuspend USBWakeFromSuspend `(v  1 e 1 0 ]
+{
+"722
+} 0
+"562 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/main.c
+[v _USBCBWakeFromSuspend USBCBWakeFromSuspend `(v  1 e 1 0 ]
+{
+"579
+} 0
+"618 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/usb_device.c
+[v _USBSuspend USBSuspend `(v  1 e 1 0 ]
+{
+"620
+[v USBSuspend@UIESave UIESave `uc  1 s 1 UIESave ]
+"693
+} 0
+"596 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/main.c
+[v _USBCBSuspend USBCBSuspend `(v  1 e 1 0 ]
+{
+"615
+} 0
+"821 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/usb_device.c
+[v _USBCtrlTrfSetupHandler USBCtrlTrfSetupHandler `(v  1 e 1 0 ]
+{
+"859
+} 0
+"1178
+[v _USBCtrlEPServiceComplete USBCtrlEPServiceComplete `(v  1 e 1 0 ]
+{
+"1305
+} 0
+"1325
+[v _USBCheckStdRequest USBCheckStdRequest `(v  1 e 1 0 ]
+{
+"1372
+} 0
+"1440
+[v _USBStdSetCfgHandler USBStdSetCfgHandler `(v  1 e 1 0 ]
+{
+"1442
+[v USBStdSetCfgHandler@i i `uc  1 s 1 i ]
+"1471
+} 0
+"1489
+[v _USBStdGetStatusHandler USBStdGetStatusHandler `(v  1 e 1 0 ]
+{
+"1528
+} 0
+"1392
+[v _USBStdGetDscHandler USBStdGetDscHandler `(v  1 e 1 0 ]
+{
+"1421
+} 0
+"1547
+[v _USBStdFeatureReqHandler USBStdFeatureReqHandler `(v  1 e 1 0 ]
+{
+"1582
+} 0
+"691 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/main.c
+[v _USBCBCheckOtherReq USBCBCheckOtherReq `(v  1 e 1 0 ]
+{
+"694
+} 0
+"73 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/usb_device_hid.c
+[v _USBCheckHIDRequest USBCheckHIDRequest `(v  1 e 1 0 ]
+{
+"137
+} 0
+"144
+[v _HIDSetReportHandler HIDSetReportHandler `(v  1 e 1 0 ]
+{
+"148
+} 0
+"139
+[v _HIDGetReportHandler HIDGetReportHandler `(v  1 e 1 0 ]
+{
+"142
+} 0
+"1024 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/usb_device.c
+[v _USBCtrlTrfInHandler USBCtrlTrfInHandler `(v  1 e 1 0 ]
+{
+"1072
+} 0
+"1094
+[v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 e 1 0 ]
+{
+"1096
+[v USBCtrlTrfTxService@bytes_to_send bytes_to_send `uc  1 s 1 bytes_to_send ]
+"1148
+} 0
+"616 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/BootPIC18NonJ.c
+[v _SignFlash SignFlash `(v  1 e 1 0 ]
+{
+"618
+[v SignFlash@i i `uc  1 s 1 i ]
+"619
+[v SignFlash@pROM pROM `*.33Cuc  1 s 3 pROM ]
+"695
+} 0
+"891
+[v _UnlockAndActivate UnlockAndActivate `(v  1 e 1 0 ]
+{
+[v UnlockAndActivate@UnlockKey UnlockKey `uc  1 a 1 wreg ]
+[v UnlockAndActivate@UnlockKey UnlockKey `uc  1 a 1 wreg ]
+"893
+[v UnlockAndActivate@UnlockKey UnlockKey `uc  1 a 1 0 ]
+"931
+} 0
+"707
+[v _ResetDeviceCleanly ResetDeviceCleanly `(v  1 e 1 0 ]
+{
+"713
+} 0
+"229 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/usb_device_hid.c
+[v _HIDTxReport HIDTxReport `(v  1 e 1 0 ]
+{
+"231
+[v HIDTxReport@i i `uc  1 a 1 4 ]
+"229
+[v HIDTxReport@buffer buffer `*.39uc  1 p 2 0 ]
+[v HIDTxReport@len len `uc  1 p 1 2 ]
+"249
+} 0
+"284
+[v _HIDRxReport HIDRxReport `(uc  1 e 1 0 ]
+{
+[v HIDRxReport@buffer buffer `*.39uc  1 p 2 0 ]
+[v HIDRxReport@len len `uc  1 p 1 2 ]
+"312
+} 0
+"447 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/main.c
+[v _InitializeSystem InitializeSystem `(v  1 e 1 0 ]
+{
+"468
+} 0
+"326 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/usb_device.c
+[v _USBDeviceInit USBDeviceInit `(v  1 e 1 0 ]
+{
+"348
+} 0
+"406
+[v _USBCheckBusStatus USBCheckBusStatus `(v  1 e 1 0 ]
+{
+"443
+} 0
+"354
+[v _USBSoftAttach USBSoftAttach `(v  1 e 1 0 ]
+{
+"374
+} 0
+"753
+[v _USBProtocolResetHandler USBProtocolResetHandler `(v  1 e 1 0 ]
+{
+"779
+} 0
+"642 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/main.c
+[v _USBCBInitEP USBCBInitEP `(v  1 e 1 0 ]
+{
+[v USBCBInitEP@ConfigurationIndex ConfigurationIndex `uc  1 a 1 wreg ]
+[v USBCBInitEP@ConfigurationIndex ConfigurationIndex `uc  1 a 1 wreg ]
+"651
+[v USBCBInitEP@ConfigurationIndex ConfigurationIndex `uc  1 a 1 0 ]
+"667
+} 0
+"331 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/BootPIC18NonJ.c
+[v _UserInit UserInit `(v  1 e 1 0 ]
+{
+"338
+} 0
+"171 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/usb_device_hid.c
+[v _HIDInitEP HIDInitEP `(v  1 e 1 0 ]
+{
+"197
+} 0
+"1592 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/usb_device.c
+[v _LoadBDTandSetUOWN LoadBDTandSetUOWN `(v  1 e 1 0 ]
+{
+[v LoadBDTandSetUOWN@BDTIndexToLoad BDTIndexToLoad `uc  1 a 1 wreg ]
+[v LoadBDTandSetUOWN@BDTIndexToLoad BDTIndexToLoad `uc  1 a 1 wreg ]
+[s S100 . 1 `uc 1 BC8 1 0 :1:0 
+`uc 1 BC9 1 0 :1:1 
+`uc 1 BSTALL 1 0 :1:2 
+`uc 1 DTSEN 1 0 :1:3 
+`uc 1 INCDIS 1 0 :1:4 
+`uc 1 KEN 1 0 :1:5 
+`uc 1 DTS 1 0 :1:6 
+`uc 1 UOWN 1 0 :1:7 
+]
+"1594
+[s S109 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID0 1 0 :1:2 
+`uc 1 PID1 1 0 :1:3 
+`uc 1 PID2 1 0 :1:4 
+`uc 1 PID3 1 0 :1:5 
+`uc 1 . 1 0 :2:6 
+]
+[s S116 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 PID 1 0 :4:2 
+`uc 1 . 1 0 :2:6 
+]
+[u S120 _BD_STAT 1 `uc 1 _byte 1 0 `S100 1 . 1 0 `S109 1 . 1 0 `S116 1 . 1 0 ]
+[s S125 . 4 `S120 1 Stat 1 0 `uc 1 Cnt 1 1 `uc 1 ADRL 1 2 `uc 1 ADRH 1 3 ]
+[s S130 . 4 `uc 1 . 1 0 :8:0 
+`uc 1 . 1 1 :8:0 
+`*.39uc 1 ADR 2 2 ]
+[u S134 _BDT 4 `S125 1 . 4 0 `S130 1 . 4 0 ]
+[v LoadBDTandSetUOWN@pBDTEntry pBDTEntry `*.39VES134  1 s 2 pBDTEntry ]
+"1600
+[v LoadBDTandSetUOWN@BDTIndexToLoad BDTIndexToLoad `uc  1 a 1 0 ]
+"1617
+} 0
+"1624
+[v _USBDisableWithLongDelay USBDisableWithLongDelay `(v  1 e 1 0 ]
+{
+"1630
+} 0
+"1634
+[v _DelayRoutine DelayRoutine `(v  1 e 1 0 ]
+{
+[v DelayRoutine@DelayAmount DelayAmount `ui  1 p 2 0 ]
+"1641
+} 0
+"1651
+[v _ClearWatchdog ClearWatchdog `(v  1 e 1 0 ]
+{
+"1654
+} 0
+"488 /home/cmerck/Dropbox/Chris/Merck_Engineering/lwk/microchip/HidBootLoader/src/main.c
+[v _BlinkUSBStatus BlinkUSBStatus `(v  1 e 1 0 ]
+{
+"490
+[v BlinkUSBStatus@led_count led_count `ui  1 s 2 led_count ]
+"509
+} 0
